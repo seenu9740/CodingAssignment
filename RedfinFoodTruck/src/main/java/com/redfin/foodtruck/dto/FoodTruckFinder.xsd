@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Created with Liquid Technologies Online Tools 1.0 (https://www.liquid-technologies.com) -->
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="response">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="rows">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element maxOccurs="unbounded" name="row">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="dayorder" type="xs:unsignedByte" />
+                    <xs:element name="dayofweekstr" type="xs:string" />
+                    <xs:element name="starttime" type="xs:string" />
+                    <xs:element name="endtime" type="xs:string" />
+                    <xs:element name="permit" type="xs:string" />
+                    <xs:element name="location" type="xs:string" />
+                    <xs:element name="locationdesc" type="xs:string" />
+                    <xs:element name="optionaltext" type="xs:string" />
+                    <xs:element name="locationid" type="xs:unsignedInt" />
+                    <xs:element name="start24" type="xs:string" />
+                    <xs:element name="end24" type="xs:string" />
+                    <xs:element name="cnn" type="xs:unsignedInt" />
+                    <xs:element name="addr_date_create" type="xs:dateTime" />
+                    <xs:element name="addr_date_modified" type="xs:dateTime" />
+                    <xs:element name="block" type="xs:unsignedShort" />
+                    <xs:element name="lot" type="xs:unsignedByte" />
+                    <xs:element name="coldtruck" type="xs:string" />
+                    <xs:element name="applicant" type="xs:string" />
+                    <xs:element name="x" type="xs:decimal" />
+                    <xs:element name="y" type="xs:decimal" />
+                    <xs:element name="latitude" type="xs:decimal" />
+                    <xs:element name="longitude" type="xs:decimal" />
+                    <xs:element name="location_2" type="xs:string" />
+                    <xs:element name="location_2_address" />
+                    <xs:element name="location_2_city" />
+                    <xs:element name="location_2_state" />
+                    <xs:element name="location_2_zip" />
+                  </xs:sequence>
+                  <xs:attribute name="_id" type="xs:string" use="required" />
+                  <xs:attribute name="_uuid" type="xs:string" use="required" />
+                  <xs:attribute name="_position" type="xs:unsignedByte" use="required" />
+                  <xs:attribute name="_address" type="xs:string" use="required" />
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
